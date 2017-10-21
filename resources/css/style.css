@@ -7,17 +7,45 @@
 .container {
   margin-left: 1.5rem;
 }
+
+@font-face {
+  font-family: 'Bree Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bree Serif Regular'), local('BreeSerif-Regular'), url(https://fonts.gstatic.com/s/breeserif/v7/LQ7WLTaITDg4OSRuOZCpswzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* NAVIGATION */
 
 nav .title {
   display: flex;
   align-items: center;
+  font-family: "Open Sans";
+  font-size: 2rem;
+}
+
+#academy {
+  color: goldenrod;
+}
+
+.title img {
+  width: 2.5rem;
 }
 
  nav li {
    display: inline-block;
    padding-left: 1rem;
+   font-family: "Open Sans";
  }
 
 nav {
@@ -26,6 +54,16 @@ nav {
   align-items: center;
   margin-right: 1.5rem;
   height: 4rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  transition: color .5s;
+}
+
+nav a:hover {
+  color: goldenrod;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -42,18 +80,48 @@ nav {
   width: 60%;
   height: 60%;
   margin: 2rem 1.5rem;
+
 }
 
 .bannertext {
-  width: 20rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.bannertext .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 0;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  background-color: grey;
+  border-radius: 25px;
+  transition: font .2s ease-in;
+}
+
+.bannertext .button:hover {
+  background-color: goldenrod;
+  font-family: "Bree Serif";
+  font-size: 2rem;
+}
+
+.bannertext a {
+  text-decoration: none;
+  color: white;
 }
 
 .bannertext h1 {
   font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Bree Serif";
 }
 
 .bannertext h3 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
+  font-family: "Open Sans";
+  line-height: 2rem;
 }
+
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
