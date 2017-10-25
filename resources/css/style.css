@@ -129,6 +129,7 @@ nav a:hover { color: goldenrod; }
 }
 
 .bannertext h1 {
+  padding-right: 16px;
   font-size: 2.5rem;
   font-weight: bold;
   font-family: 'Bree Serif', serif;
@@ -227,6 +228,10 @@ nav a:hover { color: goldenrod; }
   padding: 1rem;
 }
 
+.box .text {
+  padding-right: 16px;
+}
+
 .readmorebox .mobile-image { display: none; }
 
 .readmorebox h5 {
@@ -250,7 +255,7 @@ nav a:hover { color: goldenrod; }
 
 /* Responsive INFORMATION */
 
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 970px) {
   .entireinformation { flex-direction: column; }
 
   .practicebox {
@@ -305,6 +310,102 @@ nav a:hover { color: goldenrod; }
 
 
    .box p { margin-bottom: 1rem; }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* START LEARNING */
+
+.start-learning {
+  background-color: rgb(232, 229, 214);
+}
+
+.start-learning-title {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: "Bree serif", serif;
+    font-size: 2.5rem;
+    text-align: center;
+    color: darkblue;
+}
+
+.all-learning-boxes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 32px;
+}
+
+.learning-box {
+  width: 30%;
+  margin-bottom: 1rem;
+  background-color: white;
+  padding-bottom: 2rem;
+}
+
+.learning-box img {
+  width: 100%;
+}
+
+.learning-text h1 {
+  font-family: "Bree Serif", serif;
+  font-size: 1.3rem;
+  padding: 16px;
+  color: rgb(159, 3, 0);
+}
+
+.learning-text a {
+  text-decoration: none;
+}
+
+.learning-text p {
+  padding-left: 16px;
+  padding-right: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-size: .75rem;
+  line-height: 1.2;
+}
+
+.learning-text .course {
+  padding-bottom: 8px;
+}
+
+/* Responsive START LEARNING */
+
+@media only screen and (min-width: 550px) {
+  .learning-text h1:hover {
+    color: goldenrod;
+  }
+
+  .learning-text h1 {
+    transition: color .5s;
   }
 }
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+@media only screen and (max-width: 550px) {
+  .all-learning-boxes {
+    flex-direction: column;
+  }
+
+  .learning-box {
+    width: 100%;
+    height: 20px;
+    border: 3px dotted goldenrod;
+    border-radius: 25px;
+    transition: background-color .25s;
+  }
+
+  .learning-box:hover {
+    background-color: goldenrod;
+  }
+
+  .learning-text p {
+    display: none;
+  }
+
+  .learning-box img {
+    display: none;
+  }
+}
