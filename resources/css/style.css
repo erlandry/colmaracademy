@@ -142,6 +142,40 @@ nav a:hover { color: goldenrod; }
 }
 
 
+@media only screen and (max-width: 840px) {
+  .entirebanner { flex-direction: column; }
+
+  .entirebanner img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .bannertext .button {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    margin-left: 1.5rem;
+  }
+
+    .bannertext {
+      text-align: center;
+      margin-top: 2rem;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .entirebanner h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+  .bannertext {
+    margin-top: 0;
+  }
+
+}
+
+
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /*INFORMATION*/
