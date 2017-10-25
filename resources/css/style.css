@@ -1,13 +1,9 @@
 /* UNIVERSAL STYLES */
 
 
-.html {
-  font-size: 16px;
-}
+.html { font-size: 16px; }
 
-.container {
-  margin-left: 1.5rem;
-}
+.container { margin-left: 1.5rem; }
 
 @font-face {
   font-family: 'Bree Serif';
@@ -43,13 +39,9 @@ nav .title {
   font-size: 2rem;
 }
 
-#academy {
-  color: goldenrod;
-}
+#academy { color: goldenrod; }
 
-.title img {
-  width: 2.5rem;
-}
+.title img { width: 2.5rem;}
 
  nav li {
    display: inline-block;
@@ -72,9 +64,11 @@ nav a {
   transition: color .5s;
 }
 
-nav a:hover {
-  color: goldenrod;
-}
+nav a:hover { color: goldenrod; }
+
+/* NAVIGATION mobile */
+
+
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* BANNER */
@@ -165,9 +159,7 @@ nav a:hover {
   line-height: 1.5rem;
 }
 
-#strategist {
-  font-size: .75rem;
-}
+#strategist { font-size: .75rem; }
 
 .readmorebox {
   width: 40%;
