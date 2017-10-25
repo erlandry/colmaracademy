@@ -1,3 +1,5 @@
+
+
 /* UNIVERSAL STYLES */
 
 
@@ -21,14 +23,6 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
-@font-face {
-  font-family: 'La Belle Aurore';
-  font-style: normal;
-  font-weight: 400;
-  src: local('La Belle Aurore'), local('LaBelleAurore'), url(https://fonts.gstatic.com/s/labelleaurore/v8/Irdbc4ASuUoWDjd_Wc3md0DwMynKqisKGM8n2t8HvXA.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* NAVIGATION */
 
@@ -48,7 +42,7 @@ nav .title {
   font-size: 2rem;
 }
 
-#academy { color: goldenrod; }
+#academy { color: rgb(237, 190, 0); }
 
 .title img { width: 2.5rem;}
 
@@ -64,7 +58,7 @@ nav a {
   transition: color .5s;
 }
 
-nav a:hover { color: goldenrod; }
+nav a:hover { color: rgb(237, 190, 0); }
 
 
 /* Responsive NAVIGATION */
@@ -118,7 +112,7 @@ nav a:hover { color: goldenrod; }
 }
 
 .bannertext .button:hover {
-  background-color: goldenrod;
+  background-color: rgb(237, 190, 0);
   font-family: 'Bree Serif', serif;
   font-size: 2rem;
 }
@@ -133,7 +127,7 @@ nav a:hover { color: goldenrod; }
   font-size: 2.5rem;
   font-weight: bold;
   font-family: 'Bree Serif', serif;
-  color: darkblue;
+  color: rgb(11, 0, 127);
 }
 
 .bannertext h3 {
@@ -237,7 +231,7 @@ nav a:hover { color: goldenrod; }
 .readmorebox h5 {
   font-family: 'Bree Serif', serif;
   font-size: 1.5rem;
-  color: darkblue;
+  color: rgb(11, 0, 127);
 }
 
 .readmorebox p,
@@ -249,7 +243,7 @@ nav a:hover { color: goldenrod; }
   transition: color .2s ease-in;
 }
 
-.readmorebox a:hover { color: goldenrod; }
+.readmorebox a:hover { color: rgb(237, 190, 0); }
 
 .guestlecture { background-color: rgb(232, 229, 214); }
 
@@ -262,7 +256,7 @@ nav a:hover { color: goldenrod; }
     width: 100%;
     padding: 2rem 0;
     text-align: center;
-    background-color: goldenrod;
+    background-color: rgb(237, 190, 0);
   }
   #strategist {
     text-align: right;
@@ -325,7 +319,7 @@ nav a:hover { color: goldenrod; }
     font-family: "Bree serif", serif;
     font-size: 2.5rem;
     text-align: center;
-    color: darkblue;
+    color: rgb(11, 0, 127);
 }
 
 .all-learning-boxes {
@@ -375,7 +369,7 @@ nav a:hover { color: goldenrod; }
 
 @media only screen and (min-width: 550px) {
   .learning-text h1:hover {
-    color: goldenrod;
+    color: rgb(237, 190, 0);
   }
 
   .learning-text h1 {
@@ -392,13 +386,13 @@ nav a:hover { color: goldenrod; }
   .learning-box {
     width: 100%;
     height: 20px;
-    border: 3px dotted goldenrod;
+    border: 3px dotted rgb(237, 190, 0);
     border-radius: 25px;
     transition: background-color .25s;
   }
 
   .learning-box:hover {
-    background-color: goldenrod;
+    background-color: rgb(237, 190, 0);
   }
 
   .learning-text p {
@@ -408,4 +402,32 @@ nav a:hover { color: goldenrod; }
   .learning-box img {
     display: none;
   }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* THESIS EXHIBIT */
+
+.thesis-title {
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Bree Serif", serif;
+  color: rgb(11, 0, 127);
+
+}
+
+.thesis-content {
+  display: flex;
+}
+
+.video-section {
+  width: 60%;
+  border: 1px solid green;
+  margin: 0 24px;
+}
+
+.right-section {
+  width: 40%;
+  border: 1px solid green;
+  background-color: rgb(232, 229, 214);
 }
