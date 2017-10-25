@@ -67,7 +67,7 @@ nav a {
 nav a:hover { color: goldenrod; }
 
 
-/* NAVIGATION MOBILE */
+/* Responsive NAVIGATION */
 
 .mobile-navigation {
   display: flex;
@@ -96,7 +96,7 @@ nav a:hover { color: goldenrod; }
 .entirebanner {
   display: flex;
   align-items: center;
-  background-color: gainsboro;
+  background-color: rgb(232, 229, 214);
 }
 
 .entirebanner img {
@@ -141,6 +141,7 @@ nav a:hover { color: goldenrod; }
   line-height: 2rem;
 }
 
+/* Responsive BANNER */
 
 @media only screen and (max-width: 840px) {
   .entirebanner { flex-direction: column; }
@@ -226,6 +227,8 @@ nav a:hover { color: goldenrod; }
   padding: 1rem;
 }
 
+.readmorebox .mobile-image { display: none; }
+
 .readmorebox h5 {
   font-family: 'Bree Serif', serif;
   font-size: 1.5rem;
@@ -233,24 +236,75 @@ nav a:hover { color: goldenrod; }
 }
 
 .readmorebox p,
-.readmorebox a {
-  font-family: "Open Sans", sans-serif;
-}
+.readmorebox a { font-family: "Open Sans", sans-serif; }
 
 .readmorebox a {
-  color: black;
+  color: rgb(159, 3, 0);
   font-size: .9rem;
   transition: color .2s ease-in;
 }
 
-.readmorebox a:hover {
-  color: goldenrod;
+.readmorebox a:hover { color: goldenrod; }
+
+.guestlecture { background-color: rgb(232, 229, 214); }
+
+/* Responsive INFORMATION */
+
+@media only screen and (max-width: 840px) {
+  .entireinformation { flex-direction: column; }
+
+  .practicebox {
+    width: 100%;
+    padding: 2rem 0;
+    text-align: center;
+    background-color: goldenrod;
+  }
+  #strategist {
+    text-align: right;
+    margin-right: 2rem;
+  }
+
+  .readmorebox {
+    width: 100%;
+  }
+
+  .box .text {
+    width: 50%;
+    margin: auto;
+  }
+
+  .guestlecture { background-color: white; }
+
+  .campus { background-color: rgb(232, 229, 214); }
+
 }
 
-.guestlecture {
-  background-color: gainsboro;
+@media only screen and (max-width: 480px) {
+  .practicebox {
+    display: none;
+  }
+
+  .readmorebox .box {
+    flex-direction: column;
+  }
+
+  .readmorebox img {
+    display: none;
+  }
+
+  .readmorebox .mobile-image {
+    display: inline-block;
+    width: 92%;
+  }
+
+  .box .text {
+    width: 100%;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+
+
+   .box p { margin-bottom: 1rem; }
+  }
 }
-
-
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
