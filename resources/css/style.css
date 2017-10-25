@@ -32,6 +32,15 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* NAVIGATION */
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 1.5rem;
+  height: 4rem;
+
+}
+
 nav .title {
   display: flex;
   align-items: center;
@@ -49,15 +58,6 @@ nav .title {
    font-family: "Open Sans", sans-serif;
  }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 1.5rem;
-  height: 4rem;
-
-}
-
 nav a {
   color: black;
   text-decoration: none;
@@ -66,9 +66,29 @@ nav a {
 
 nav a:hover { color: goldenrod; }
 
-/* NAVIGATION mobile */
 
+/* NAVIGATION MOBILE */
 
+.mobile-navigation {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.mobile-navigation img { display: block; }
+
+@media only screen and (min-width: 800px) {
+  nav .mobile-navigation {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  nav .title,
+   nav ul {
+    display: none;
+  }
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* BANNER */
@@ -77,14 +97,12 @@ nav a:hover { color: goldenrod; }
   display: flex;
   align-items: center;
   background-color: gainsboro;
-
 }
 
 .entirebanner img {
   width: 60%;
   height: 60%;
   margin: 2rem 1.5rem;
-
 }
 
 .bannertext .button {
@@ -122,8 +140,6 @@ nav a:hover { color: goldenrod; }
   font-family: "Open Sans", sans-serif;
   line-height: 2rem;
 }
-
-/*Banner mobile */
 
 
 
