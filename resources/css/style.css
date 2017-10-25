@@ -1,5 +1,6 @@
 /* UNIVERSAL STYLES */
 
+
 .html {
   font-size: 16px;
 }
@@ -24,13 +25,21 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
+@font-face {
+  font-family: 'La Belle Aurore';
+  font-style: normal;
+  font-weight: 400;
+  src: local('La Belle Aurore'), local('LaBelleAurore'), url(https://fonts.gstatic.com/s/labelleaurore/v8/Irdbc4ASuUoWDjd_Wc3md0DwMynKqisKGM8n2t8HvXA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* NAVIGATION */
 
 nav .title {
   display: flex;
   align-items: center;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 2rem;
 }
 
@@ -45,7 +54,7 @@ nav .title {
  nav li {
    display: inline-block;
    padding-left: 1rem;
-   font-family: "Open Sans";
+   font-family: "Open Sans", sans-serif;
  }
 
 nav {
@@ -54,11 +63,12 @@ nav {
   align-items: center;
   margin-right: 1.5rem;
   height: 4rem;
+
 }
 
 nav a {
-  text-decoration: none;
   color: black;
+  text-decoration: none;
   transition: color .5s;
 }
 
@@ -73,7 +83,7 @@ nav a:hover {
   display: flex;
   align-items: center;
   background-color: gainsboro;
-  margin: 0;
+
 }
 
 .entirebanner img {
@@ -83,11 +93,6 @@ nav a:hover {
 
 }
 
-.bannertext {
-  display: flex;
-  flex-direction: column;
-}
-
 .bannertext .button {
   display: flex;
   align-items: center;
@@ -95,14 +100,14 @@ nav a:hover {
   padding: 8px 0;
   margin-top: 2rem;
   margin-right: 2rem;
-  background-color: grey;
+  background-color: rgb(159, 3, 0);
   border-radius: 25px;
   transition: font .2s ease-in;
 }
 
 .bannertext .button:hover {
   background-color: goldenrod;
-  font-family: "Bree Serif";
+  font-family: 'Bree Serif', serif;
   font-size: 2rem;
 }
 
@@ -114,14 +119,96 @@ nav a:hover {
 .bannertext h1 {
   font-size: 2.5rem;
   font-weight: bold;
-  font-family: "Bree Serif";
+  font-family: 'Bree Serif', serif;
+  color: darkblue;
 }
 
 .bannertext h3 {
   font-size: 1.5rem;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   line-height: 2rem;
 }
+
+/*Banner mobile */
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*INFORMATION*/
+
+.entireinformation {
+  display: flex;
+  padding-bottom: 2rem;
+}
+
+.practicebox {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.practicebox img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.practicebox h1 {
+  padding-top: 2rem;
+  font-family: 'Bree Serif', serif;
+  font-size: 2.5rem;
+  color: rgb(159, 3, 0);
+}
+
+.practicebox p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+#strategist {
+  font-size: .75rem;
+}
+
+.readmorebox {
+  width: 40%;
+  padding-top: 1rem;
+}
+
+.readmorebox .box {
+  display: flex;
+  align-items: center;
+}
+
+.readmorebox img {
+  width: 35%;
+  padding: 1rem;
+}
+
+.readmorebox h5 {
+  font-family: 'Bree Serif', serif;
+  font-size: 1.5rem;
+  color: darkblue;
+}
+
+.readmorebox p,
+.readmorebox a {
+  font-family: "Open Sans", sans-serif;
+}
+
+.readmorebox a {
+  color: black;
+  font-size: .9rem;
+  transition: color .2s ease-in;
+}
+
+.readmorebox a:hover {
+  color: goldenrod;
+}
+
+.guestlecture {
+  background-color: gainsboro;
+}
+
 
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
