@@ -502,7 +502,6 @@ nav a:hover { color: rgb(237, 190, 0); }
 /* FOOTER */
 
 footer {
-  border: 1px solid green;
   display: flex;
   justify-content: space-between;
   align-items: center;
