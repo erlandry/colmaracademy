@@ -72,16 +72,12 @@ nav a:hover { color: rgb(237, 190, 0); }
 .mobile-navigation img { display: block; }
 
 @media only screen and (min-width: 800px) {
-  nav .mobile-navigation {
-    display: none;
-  }
+  nav .mobile-navigation { display: none; }
 }
 
 @media only screen and (max-width: 800px) {
   nav .title,
-   nav ul {
-    display: none;
-  }
+   nav ul { display: none; }
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -165,9 +161,7 @@ nav a:hover { color: rgb(237, 190, 0); }
     margin-top: 2rem;
   }
 
-  .bannertext {
-    margin-top: 0;
-  }
+  .bannertext { margin-top: 0; }
 
 }
 
@@ -222,9 +216,7 @@ nav a:hover { color: rgb(237, 190, 0); }
   padding: 1rem;
 }
 
-.box .text {
-  padding-right: 16px;
-}
+.box .text { padding-right: 16px; }
 
 .readmorebox .mobile-image { display: none; }
 
@@ -271,9 +263,7 @@ nav a:hover { color: rgb(237, 190, 0); }
     padding-top: 0;
   }
 
-  .readmorebox img {
-    width: 20%;
-  }
+  .readmorebox img { width: 20%; }
 
   .box .text {
     width: 50%;
@@ -287,17 +277,11 @@ nav a:hover { color: rgb(237, 190, 0); }
 }
 
 @media only screen and (max-width: 480px) {
-  .practicebox {
-    display: none;
-  }
+  .practicebox { display: none; }
 
-  .readmorebox .box {
-    flex-direction: column;
-  }
+  .readmorebox .box { flex-direction: column; }
 
-  .readmorebox img {
-    display: none;
-  }
+  .readmorebox img { display: none; }
 
   .readmorebox .mobile-image {
     display: inline-block;
@@ -317,9 +301,7 @@ nav a:hover { color: rgb(237, 190, 0); }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* START LEARNING */
 
-.start-learning {
-  background-color: rgb(232, 229, 214);
-}
+.start-learning { background-color: rgb(232, 229, 214); }
 
 .start-learning-title {
     padding-top: 2rem;
@@ -344,12 +326,9 @@ nav a:hover { color: rgb(237, 190, 0); }
   margin-bottom: 1rem;
   background-color: white;
   padding-bottom: 2rem;
-  border-radius: 25px;
 }
 
-.learning-box img {
-  width: 100%;
-}
+.learning-box img { width: 100%; }
 
 .learning-text h1 {
   font-family: "Bree Serif", serif;
@@ -358,9 +337,7 @@ nav a:hover { color: rgb(237, 190, 0); }
   color: rgb(159, 3, 0);
 }
 
-.learning-text a {
-  text-decoration: none;
-}
+.learning-text a { text-decoration: none; }
 
 .learning-text p {
   padding-left: 16px;
@@ -370,27 +347,19 @@ nav a:hover { color: rgb(237, 190, 0); }
   line-height: 1.2;
 }
 
-.learning-text .course {
-  padding-bottom: 8px;
-}
+.learning-text .course { padding-bottom: 8px; }
 
 /* Responsive START LEARNING */
 
 @media only screen and (min-width: 550px) {
-  .learning-text h1:hover {
-    color: rgb(237, 190, 0);
-  }
 
-  .learning-text h1 {
-    transition: color .5s;
-  }
+  .learning-text h1:hover { color: rgb(237, 190, 0); }
+  .learning-text h1 { transition: color .5s; }
 }
 
 
 @media only screen and (max-width: 550px) {
-  .all-learning-boxes {
-    flex-direction: column;
-  }
+  .all-learning-boxes { flex-direction: column; }
 
   .learning-box {
     width: 100%;
@@ -400,17 +369,9 @@ nav a:hover { color: rgb(237, 190, 0); }
     transition: background-color .25s;
   }
 
-  .learning-box:hover {
-    background-color: rgb(237, 190, 0);
-  }
-
-  .learning-text p {
-    display: none;
-  }
-
-  .learning-box img {
-    display: none;
-  }
+  .learning-box:hover { background-color: rgb(237, 190, 0); }
+  .learning-text p { display: none; }
+  .learning-box img { display: none; }
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -440,9 +401,7 @@ nav a:hover { color: rgb(237, 190, 0); }
   transition: color .5s;
 }
 
-.right-section a:hover {
-  color: rgb(237, 190, 0);
-}
+.right-section a:hover { color: rgb(237, 190, 0); }
 
 .fisma-box,
 .now-box {
@@ -476,9 +435,7 @@ nav a:hover { color: rgb(237, 190, 0); }
   padding-left: 1rem;
 }
 
-.video-section h3 {
-  padding-top: 1rem;
-}
+.video-section h3 { padding-top: 1rem; }
 
 .right-section img {
   width: 35%;
@@ -493,9 +450,7 @@ nav a:hover { color: rgb(237, 190, 0); }
     display: none;
   }
 
-  .video-section {
-    width: 100%;
-  }
+  .video-section { width: 100%; }
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -511,13 +466,9 @@ footer {
   background-color: rgb(237, 190, 0);
 }
 
-.footernav a:hover {
-  color: rgb(232, 229, 214);
-}
+.footernav a:hover { color: rgb(232, 229, 214); }
 
 /*Responsive Footer */
 @media only screen and (max-width: 500px) {
-  footer {
-    font-size: .65rem;
-  }
+  footer { font-size: .65rem; }
 }
